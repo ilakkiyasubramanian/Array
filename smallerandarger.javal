@@ -1,0 +1,18 @@
+class Solve {
+    int[] getMoreAndLess(int[] arr, int n, int x) {
+        // code here
+        int c=0,d=0;
+        for(int i:arr)
+        {
+            if(i<=x){
+                c+=1;
+            }
+            if(i>=x)
+            {
+                d+=1;
+            }
+        }
+        return new int[] {c,d};
+        
+    }
+}
